@@ -16,7 +16,7 @@ def insert_documents():
 
         # Connect to MongoDB
         client = pymongo.MongoClient(
-            'mongodb://falcon:c%23eeseP1zza@54.175.8.41:27017/?authMechanism=DEFAULT&authSource=admin')
+            'mongodb://?authMechanism=DEFAULT&authSource=admin')
         db = client['job_scrapers']
         collection = db[collection_name]
 
